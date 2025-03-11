@@ -74,7 +74,7 @@
     {#if !$smallMode}
       <label class="text-sm font-normal"
         >Inactive
-        <input title="Toggle Inactive Nodes" type="checkbox" bind:checked={showInactive} />
+        <input title="Toggle Inactive Nodes" type="checkbox" bind:checked={showInactive} name="toggle_inactive_nodes" id="toggle-inactive-nodes" />
       </label>
     {/if}
     <button title="Reduce/Expand Node List" on:click={() => ($smallMode = !$smallMode)} class="btn !px-2 text-sm font-normal">{$smallMode ? '→' : '←'}</button>
